@@ -333,6 +333,12 @@
         "action"
       ],
       "pinDigests": false
+    },{
+// We want dedicated PRs for each major bump to GitHub Actions
+      "matchDepTypes": [
+        "action"
+      ],
+      "pinDigests": false
     }
   ]
 }
