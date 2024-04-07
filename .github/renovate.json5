@@ -8,7 +8,7 @@
   "prConcurrentLimit": 5,
 // The branches renovate should target
 // PLEASE UPDATE THIS WHEN RELEASING.
-  "baseBranches": ["main","release-1.21","release-1.22"],
+  "baseBranches": ["main"],
   "ignorePaths": ["docs/**", "config/**", "releases/**", "contribute/**", "config/**", "licenses/**"],
   "postUpdateOptions": ["gomodTidy"],
   "semanticCommits": "enabled",
@@ -326,6 +326,12 @@
         "patch"
       ],
       "groupName": "all non-major github action",
+      "pinDigests": false
+    },{
+// We want dedicated PRs for each major bump to GitHub Actions
+      "matchDepTypes": [
+        "action"
+      ],
       "pinDigests": false
     },{
 // We want dedicated PRs for each major bump to GitHub Actions
