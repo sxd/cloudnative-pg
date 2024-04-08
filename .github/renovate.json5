@@ -12,6 +12,7 @@
   "ignorePaths": ["docs/**", "config/**", "releases/**", "contribute/**", "config/**", "licenses/**"],
   "postUpdateOptions": ["gomodTidy"],
   "semanticCommits": "enabled",
+  "commitBodyTable": "true",
 // All PRs should have a label
   "labels": ["automated", "do not backport", "no-issue"],
   "regexManagers": [
