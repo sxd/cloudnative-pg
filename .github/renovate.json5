@@ -364,6 +364,16 @@
       ],
       "separateMajorMinor": "false",
       "pinDigests": false
+    },
+{
+      // PR group for all the operator framework related things
+      "groupNam": "operator framework",
+      "matchPackagePrefixes": [
+        "operator-framework",
+        "redhat-openshift-ecosystem",
+      ],
+      "separateMajorMinor": "false",
+      "pinDigests": false
     }
   ]
 }
