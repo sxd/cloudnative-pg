@@ -367,7 +367,7 @@
     },
 {
       // PR group for all the operator framework related things
-      "groupNam": "operator framework",
+      "groupName": "operator framework",
       "matchPackagePrefixes": [
         "operator-framework",
         "redhat-openshift-ecosystem",
