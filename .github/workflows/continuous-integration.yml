@@ -644,7 +644,7 @@ jobs:
           cache-to: ${{ env.BUILD_PUSH_CACHE_TO }}
 
       - name: Generate SBOM for image
-        uses: anchore/sbom-action@v0.15.10
+        uses: anchore/sbom-action@v0.15.11
         with:
           image: ${{ steps.docker-meta.outputs.tags }}
           artifact-name: cloudnative-pg-${{ env.VERSION }}.spdx
@@ -663,7 +663,7 @@ jobs:
           tags: ${{ steps.docker-meta-ubi8.outputs.tags }}
 
       - name: Generate SBOM for image
-        uses: anchore/sbom-action@v0.15.10
+        uses: anchore/sbom-action@v0.15.11
         with:
           image: ${{ steps.docker-meta-ubi8.outputs.tags }}
           artifact-name: cloudnative-pg-${{ env.VERSION }}-ubi8.spdx
@@ -682,7 +682,7 @@ jobs:
           tags: ${{ steps.docker-meta-ubi9.outputs.tags }}
 
       - name: Generate SBOM for image
-        uses: anchore/sbom-action@v0.15.10
+        uses: anchore/sbom-action@v0.15.11
         with:
           image: ${{ steps.docker-meta-ubi9.outputs.tags }}
           artifact-name: cloudnative-pg-${{ env.VERSION }}-ubi9.spdx
@@ -825,7 +825,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setting up KinD cluster
-        uses: helm/kind-action@v1.9.0
+        uses: helm/kind-action@v1.10.0
         with:
           wait: "600s"
           version: ${{ env.KIND_VERSION }}
