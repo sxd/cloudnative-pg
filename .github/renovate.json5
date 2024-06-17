@@ -222,8 +222,8 @@
       "matchStrings": [
         "image: quay.io/operator-framework/scorecard-test:(?<currentValue>.*?)\\n",
       ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "operator-framework/operator-sdk",
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "quay.io/operator-framework/scorecard-test",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "^(?<version>v\\d+\\.\\d+\\.\\d+)"
     },{
@@ -384,6 +384,7 @@
       "matchPackagePrefixes": [
         "operator-framework",
         "redhat-openshift-ecosystem",
+	"quay.io/operator-framework",
       ],
       "separateMajorMinor": "false",
       "pinDigests": false
